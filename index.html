@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie Pluies - Sujet Singulière | Psychothérapie à Nyon</title>
+    <meta name="description" content="Julie Pluies, psychothérapeute à Nyon, vous accompagne dans votre parcours de développement personnel avec bienveillance et professionnalisme.">
+    
+    <!-- Google Font: Atkinson Hyperlegible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset Layer */
+        @layer reset, theme, layout;
+        
+        @layer reset {
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+                line-height: 1.6;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        /* Theme Layer - Utopian Typography & Color Palette */
+        @layer theme {
+            :root {
+                /* Utopian Fluid Typography */
+                --step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
+                --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
+                --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+                --step-1: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+                --step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+                --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+                --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem);
+                --step-5: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.81rem);
+                
+                /* Utopian Fluid Space */
+                --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
+                --space-2xs: clamp(0.50rem, calc(0.45rem + 0.22vw), 0.63rem);
+                --space-xs: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+                --space-s: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+                --space-m: clamp(1.50rem, calc(1.36rem + 0.65vw), 1.88rem);
+                --space-l: clamp(2.00rem, calc(1.82rem + 0.87vw), 2.50rem);
+                --space-xl: clamp(3.00rem, calc(2.73rem + 1.30vw), 3.75rem);
+                --space-2xl: clamp(4.00rem, calc(3.64rem + 1.74vw), 5.00rem);
+                --space-3xl: clamp(6.00rem, calc(5.45rem + 2.61vw), 7.50rem);
+                
+                /* Color Palette from coolors.co */
+                --coral: #FFA69E;
+                --cream: #FAF3DD; 
+                --mint: #B8F2E6;
+                --sage: #AED9E0;
+                --charcoal: #5E6472;
+                
+                /* Semantic Color Variables */
+                --color-primary: var(--sage);
+                --color-secondary: var(--mint);
+                --color-accent: var(--coral);
+                --color-neutral-light: var(--cream);
+                --color-neutral-dark: var(--charcoal);
+                --color-text: var(--charcoal);
+                --color-background: var(--cream);
+                
+                /* Layout System Variables */
+                --layout-fluid-min: 300px;
+                --layout-default-repeat: 3;
+                --layout-default-gap: var(--space-l);
+                
+                /* Typography */
+                --font-family-base: 'Atkinson Hyperlegible', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                --font-family-heading: 'Atkinson Hyperlegible', Georgia, 'Times New Roman', Times, serif;
+                
+                /* Shadows */
+                --shadow-subtle: 0 2px 8px rgba(94, 100, 114, 0.1);
+                --shadow-medium: 0 4px 16px rgba(94, 100, 114, 0.15);
+                
+                /* Border Radius */
+                --radius-small: 8px;
+                --radius-medium: 16px;
+                --radius-large: 24px;
+            }
+        }
+        
+        /* Layout Layer - Modern CSS Grid System */
+        @layer layout {
+            .fluid-grid {
+                --_fluid-grid-min: var(--fluid-grid-min, var(--layout-fluid-min));
+                --_fluid-grid-gap: var(--grid-gap, var(--layout-default-gap));
+                display: grid;
+                grid-template-columns: repeat(
+                    auto-fit,
+                    minmax(min(var(--_fluid-grid-min), 100%), 1fr)
+                );
+                gap: var(--_fluid-grid-gap);
+            }
+            
+            .repeating-grid {
+                --_grid-repeat: var(--grid-repeat, var(--layout-default-repeat));
+                --_repeating-grid-gap: var(--grid-gap, var(--layout-default-gap));
+                display: grid;
+                grid-template-columns: repeat(var(--_grid-repeat), 1fr);
+                gap: var(--_repeating-grid-gap);
+            }
+            
+            .container {
+                width: min(100% - var(--space-m), 70rem);
+                margin-inline: auto;
+            }
+            
+            .full-width {
+                width: 100%;
+                margin-inline: 0;
+            }
+            
+            .flow > * + * {
+                margin-top: var(--flow-space, var(--space-s));
+            }
+            
+            .center {
+                text-align: center;
+            }
+        }
+        
+        /* Base Typography */
+        body {
+            font-family: var(--font-family-base);
+            font-size: var(--step-0);
+            color: var(--color-text);
+            background-color: var(--color-background);
+        }
+        
+        h1 {
+            font-family: var(--font-family-heading);
+            font-size: var(--step-5);
+            font-weight: 300;
+            line-height: 1.1;
+            color: var(--color-neutral-dark);
+        }
+        
+        h2 {
+            font-family: var(--font-family-heading);
+            font-size: var(--step-3);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--color-neutral-dark);
+        }
+        
+        h3 {
+            font-family: var(--font-family-heading);
+            font-size: var(--step-2);
+            font-weight: 500;
+            line-height: 1.3;
+            color: var(--color-neutral-dark);
+        }
+        
+        p {
+            font-size: var(--step-0);
+            line-height: 1.6;
+            max-width: 65ch;
+        }
+        
+        .lead {
+            font-size: var(--step-1);
+            font-weight: 300;
+            color: var(--color-neutral-dark);
+            line-height: 1.5;
+        }
+        
+        .small {
+            font-size: var(--step--1);
+        }
+        
+        /* Header */
+        .site-header {
+            padding: var(--space-l) 0;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .site-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('noise-light.png') repeat;
+            opacity: 0.1;
+            z-index: 1;
+            mix-blend-mode: overlay;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-s);
+            margin-bottom: var(--space-m);
+            justify-content: center;
+        }
+        
+        .logo-image {
+            width: 60px;
+            height: 60px;
+            filter: brightness(0) invert(1);
+        }
+        
+        .logo h1 {
+            color: white;
+            margin: 0;
+        }
+        
+        .tagline {
+            color: white;
+            opacity: 0.9;
+            font-size: var(--step-0);
+            margin: 0;
+        }
+        
+        /* Navigation */
+        .nav {
+            display: flex;
+            gap: var(--space-l);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--space-l);
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: var(--space-2xs) var(--space-s);
+            border-radius: var(--radius-small);
+            transition: background-color 0.3s ease;
+        }
+        
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: var(--space-2xl) 0;
+            background-color: white;
+            --flow-space: var(--space-l);
+        }
+        
+        .hero-grid {
+            --grid-repeat: 2;
+            --grid-gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .hero-text h2 {
+            margin-top: 0;
+        }
+        
+        .hero-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-large);
+            box-shadow: var(--shadow-medium);
+            aspect-ratio: 4/3;
+            background-color: var(--color-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-neutral-dark);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: var(--space-3xl) 0;
+            background: linear-gradient(145deg, white 0%, var(--color-neutral-light) 100%);
+            position: relative;
+        }
+        
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('noise-light.png') repeat;
+            opacity: 0.05;
+            z-index: 1;
+            mix-blend-mode: multiply;
+        }
+        
+        .services-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Approach Section - New */
+        .approach {
+            padding: var(--space-3xl) 0;
+            background: var(--color-secondary);
+            color: var(--color-neutral-dark);
+            position: relative;
+        }
+        
+        .approach::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('noise-light.png') repeat;
+            opacity: 0.1;
+            z-index: 1;
+            mix-blend-mode: overlay;
+        }
+        
+        .approach-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .approach-grid {
+            --grid-repeat: 3;
+            --grid-gap: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+        
+        .approach-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: var(--space-l);
+            border-radius: var(--radius-medium);
+            box-shadow: var(--shadow-subtle);
+            backdrop-filter: blur(10px);
+            --flow-space: var(--space-s);
+        }
+        
+        /* Testimonials Section - New */
+        .testimonials {
+            padding: var(--space-3xl) 0;
+            background: var(--color-neutral-dark);
+            color: white;
+            position: relative;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('noise-light.png') repeat;
+            opacity: 0.08;
+            z-index: 1;
+            mix-blend-mode: screen;
+        }
+        
+        .testimonials-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonials h2 {
+            color: white;
+        }
+        
+        .testimonials-grid {
+            --fluid-grid-min: 300px;
+            --grid-gap: var(--space-l);
+            margin-top: var(--space-xl);
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-l);
+            border-radius: var(--radius-medium);
+            backdrop-filter: blur(10px);
+            --flow-space: var(--space-s);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: var(--step-0);
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            margin-top: var(--space-s);
+            font-weight: 700;
+            opacity: 0.9;
+        }
+        
+        .services-grid {
+            --fluid-grid-min: 280px;
+            --grid-gap: var(--space-l);
+            margin-top: var(--space-xl);
+        }
+        
+        .service-card {
+            background: white;
+            padding: var(--space-l);
+            border-radius: var(--radius-medium);
+            box-shadow: var(--shadow-subtle);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            --flow-space: var(--space-s);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-s);
+            font-size: var(--step-1);
+            color: white;
+        }
+        
+        /* About Section */
+        .about {
+            padding: var(--space-3xl) 0;
+            background-color: white;
+        }
+        
+        .about-grid {
+            --grid-repeat: 2;
+            --grid-gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .about-image {
+            order: 2;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-large);
+            box-shadow: var(--shadow-medium);
+            aspect-ratio: 3/4;
+            background-color: var(--color-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .about-text {
+            order: 1;
+            --flow-space: var(--space-m);
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: var(--space-3xl) 0;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('noise-light.png') repeat;
+            opacity: 0.15;
+            z-index: 1;
+            mix-blend-mode: overlay;
+        }
+        
+        .contact-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact-grid {
+            --grid-repeat: 2;
+            --grid-gap: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+        
+        .contact-info {
+            --flow-space: var(--space-m);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-s);
+            padding: var(--space-s);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-small);
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--step-0);
+        }
+        
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: var(--space-l);
+            border-radius: var(--radius-medium);
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-form h3 {
+            color: var(--color-text);
+            margin-top: 0;
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-m);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--space-2xs);
+            color: var(--color-text);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--space-s);
+            border: 1px solid rgba(94, 100, 114, 0.2);
+            border-radius: var(--radius-small);
+            font-family: var(--font-family-base);
+            font-size: var(--step--1);
+            color: var(--color-text);
+            background-color: white;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: var(--space-s) var(--space-l);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-small);
+            border: none;
+            font-family: var(--font-family-base);
+            font-size: var(--step-0);
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        /* Footer */
+        .site-footer {
+            padding: var(--space-xl) 0 var(--space-l);
+            background-color: var(--color-neutral-dark);
+            color: white;
+        }
+        
+        .footer-content {
+            text-align: center;
+            --flow-space: var(--space-s);
+        }
+        
+        .footer-content p {
+            margin: 0;
+            opacity: 0.8;
+            font-size: var(--step--1);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                --grid-repeat: 1;
+            }
+            
+            .about-image {
+                order: 1;
+            }
+            
+            .about-text {
+                order: 2;
+            }
+            
+            .nav {
+                gap: var(--space-s);
+            }
+            
+            .services-grid {
+                --fluid-grid-min: 250px;
+            }
+        }
+        
+        /* Utilities */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content center">
+                <div class="logo">
+                    <img src="logo.svg" alt="Logo Sujet Singulière" class="logo-image">
+                    <h1>Sujet Singulière</h1>
+                </div>
+                <p class="tagline">Accompagnement psychologique personnalisé à Nyon</p>
+                
+                <nav class="nav">
+                    <a href="#services">Services</a>
+                    <a href="#approche">Mon approche</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="repeating-grid hero-grid">
+                    <div class="hero-text flow">
+                        <h2>Bienvenue chez Julie Pluies</h2>
+                        <p class="lead">
+                            Je vous accompagne dans votre parcours de développement personnel avec bienveillance, 
+                            écoute et professionnalisme. Ensemble, explorons les ressources qui vous permettront 
+                            de retrouver équilibre et sérénité.
+                        </p>
+                        <p>
+                            Chaque personne est unique, chaque parcours l'est aussi. Mon approche s'adapte à vos 
+                            besoins spécifiques pour vous offrir un espace de dialogue sécurisant et constructif.
+                        </p>
+                        <a href="#contact" class="btn">Prendre rendez-vous</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="julie-photo.jpg" alt="Julie Pluies, psychothérapeute" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-large);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="services-content">
+                    <div class="center flow">
+                        <h2>Mes accompagnements</h2>
+                        <p class="lead">
+                            Une approche adaptée à chaque situation, dans le respect de votre singularité
+                        </p>
+                    </div>
+                    
+                    <div class="fluid-grid services-grid">
+                    <div class="service-card flow">
+                        <div class="service-icon">🌱</div>
+                        <h3>Thérapie individuelle</h3>
+                        <p>
+                            Un espace privilégié pour explorer vos difficultés, comprendre vos fonctionnements 
+                            et développer vos ressources personnelles dans un cadre sécurisant.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card flow">
+                        <div class="service-icon">💫</div>
+                        <h3>Gestion du stress</h3>
+                        <p>
+                            Techniques et outils concrets pour apprendre à gérer l'anxiété, le stress du quotidien 
+                            et retrouver un équilibre émotionnel durable.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card flow">
+                        <div class="service-icon">🌊</div>
+                        <h3>Accompagnement des transitions</h3>
+                        <p>
+                            Soutien lors des périodes de changement : séparation, deuil, reconversion professionnelle, 
+                            ou tout autre tournant de votre vie.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card flow">
+                        <div class="service-icon">🎯</div>
+                        <h3>Développement personnel</h3>
+                        <p>
+                            Exploration de vos potentiels, amélioration de l'estime de soi, et construction 
+                            d'une meilleure relation à soi-même et aux autres.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card flow">
+                        <div class="service-icon">🌸</div>
+                        <h3>Thérapie de couple</h3>
+                        <p>
+                            Accompagnement bienveillant pour améliorer la communication, résoudre les conflits 
+                            et renforcer les liens dans votre relation.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card flow">
+                        <div class="service-icon">🌟</div>
+                        <h3>Soutien parental</h3>
+                        <p>
+                            Guidance et soutien dans votre rôle de parent, pour naviguer les défis éducatifs 
+                            avec confiance et sérénité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="approche" class="approach">
+            <div class="container">
+                <div class="approach-content">
+                    <div class="center flow">
+                        <h2>Mon approche thérapeutique</h2>
+                        <p class="lead">
+                            Une méthode intégrative qui s'adapte à vos besoins spécifiques
+                        </p>
+                    </div>
+                    
+                    <div class="repeating-grid approach-grid">
+                        <div class="approach-card flow">
+                            <h3>🧠 Cognitivo-comportementale</h3>
+                            <p>
+                                Identifier et modifier les pensées négatives qui influencent vos émotions 
+                                et comportements pour développer des stratégies d'adaptation plus saines.
+                            </p>
+                        </div>
+                        
+                        <div class="approach-card flow">
+                            <h3>💝 Approche humaniste</h3>
+                            <p>
+                                Valoriser votre potentiel de croissance naturelle dans un climat d'empathie, 
+                                d'authenticité et d'acceptation inconditionnelle.
+                            </p>
+                        </div>
+                        
+                        <div class="approach-card flow">
+                            <h3>🔄 Thérapie systémique</h3>
+                            <p>
+                                Comprendre vos difficultés dans le contexte de vos relations familiales, 
+                                sociales et professionnelles pour favoriser des changements durables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="about">
+            <div class="container">
+                <div class="repeating-grid about-grid">
+                    <div class="about-text flow">
+                        <h2>À propos de Julie</h2>
+                        <p>
+                            Psychothérapeute diplômée, j'exerce avec passion depuis plus de dix ans. 
+                            Mon parcours m'a menée à développer une approche intégrative, puisant dans 
+                            différentes méthodes thérapeutiques pour s'adapter au mieux à vos besoins.
+                        </p>
+                        <p>
+                            Formée aux thérapies cognitivo-comportementales, à l'approche humaniste et 
+                            aux thérapies systémiques, je crois profondément en la capacité de chacun 
+                            à trouver ses propres solutions avec un accompagnement approprié.
+                        </p>
+                        <p>
+                            Mon cabinet à Nyon offre un cadre chaleureux et confidentiel où vous pourrez 
+                            vous exprimer librement, sans jugement, dans le respect de votre rythme et 
+                            de vos valeurs.
+                        </p>
+                        <div>
+                            <h3>Formation et certifications</h3>
+                            <ul style="padding-left: var(--space-m); color: var(--color-neutral-dark);">
+                                <li>Master en Psychologie Clinique, Université de Lausanne</li>
+                                <li>Formation en Thérapie Cognitivo-Comportementale</li>
+                                <li>Certification en Approche Systémique</li>
+                                <li>Formation continue en Mindfulness et gestion du stress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="julie-photo.jpg" alt="Julie Pluies dans son cabinet" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-large);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials-content">
+                    <div class="center flow">
+                        <h2>Témoignages</h2>
+                        <p class="lead">
+                            Les retours de personnes qui ont entrepris ce parcours
+                        </p>
+                    </div>
+                    
+                    <div class="fluid-grid testimonials-grid">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Julie m'a accompagnée avec une écoute exceptionnelle pendant une période très difficile. 
+                                Grâce à son approche bienveillante, j'ai pu retrouver confiance en moi."
+                            </p>
+                            <p class="testimonial-author">— Sophie, 34 ans</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Les outils que j'ai appris pour gérer mon stress m'accompagnent au quotidien. 
+                                Julie a su créer un espace où je me suis senti libre de m'exprimer."
+                            </p>
+                            <p class="testimonial-author">— Marc, 42 ans</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "En thérapie de couple, nous avons appris à mieux communiquer. 
+                                Julie nous a guidés avec professionnalisme et sans jugement."
+                            </p>
+                            <p class="testimonial-author">— Claire & David</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="center flow">
+                        <h2>Prenons contact</h2>
+                        <p class="lead">
+                            Je vous reçois dans mon cabinet à Nyon ou propose des consultations en ligne. 
+                            N'hésitez pas à me contacter pour toute question ou pour convenir d'un rendez-vous.
+                        </p>
+                    </div>
+                    
+                    <div class="repeating-grid contact-grid">
+                        <div class="contact-info flow">
+                            <h3>Informations pratiques</h3>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <strong>Adresse</strong><br>
+                                    Cabinet Sujet Singulière<br>
+                                    Rue de la Gare 15<br>
+                                    1260 Nyon, Suisse
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <strong>Téléphone</strong><br>
+                                    <a href="tel:+41220000000" style="color: white; text-decoration: none;">+41 22 000 00 00</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:julie@sujetsinguliere.ch" style="color: white; text-decoration: none;">julie@sujetsinguliere.ch</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>
+                                    <strong>Horaires</strong><br>
+                                    Lundi - Vendredi : 9h00 - 18h00<br>
+                                    Samedi sur rendez-vous
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">💳</div>
+                                <div>
+                                    <strong>Tarifs</strong><br>
+                                    Consultation individuelle : 120 CHF<br>
+                                    Thérapie de couple : 150 CHF<br>
+                                    <small>Remboursement possible selon votre assurance</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Demande de rendez-vous</h3>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="nom">Nom complet *</label>
+                                    <input type="text" id="nom" name="nom" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone</label>
+                                    <input type="tel" id="telephone" name="telephone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="type">Type de consultation</label>
+                                    <select id="type" name="type" style="width: 100%; padding: var(--space-s); border: 1px solid rgba(94, 100, 114, 0.2); border-radius: var(--radius-small); font-family: var(--font-family-base); font-size: var(--step--1); color: var(--color-text); background-color: white;">
+                                        <option value="individuelle">Thérapie individuelle</option>
+                                        <option value="couple">Thérapie de couple</option>
+                                        <option value="stress">Gestion du stress</option>
+                                        <option value="transition">Accompagnement des transitions</option>
+                                        <option value="developpement">Développement personnel</option>
+                                        <option value="parental">Soutien parental</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" placeholder="Décrivez brièvement votre demande ou vos disponibilités..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn">Envoyer ma demande</button>
+                                
+                                <p class="small" style="margin-top: var(--space-s); opacity: 0.8; color: var(--color-text);">
+                                    * Champs obligatoires. Vos données sont traitées de manière confidentielle 
+                                    et ne sont jamais partagées avec des tiers.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content flow">
+                <p>&copy; 2025 Sujet Singulière - Julie Pluies, Psychothérapeute</p>
+                <p>Cabinet de psychothérapie à Nyon, Suisse | RCC : [Numéro à ajouter]</p>
+                <p>
+                    <a href="#" style="color: white; opacity: 0.8;">Mentions légales</a> | 
+                    <a href="#" style="color: white; opacity: 0.8;">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
