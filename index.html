@@ -9,7 +9,6 @@
       content="Sujet Singulier, un espace où le processus créateur devient soin. Art-thérapie à Nyon pour enfants, adolescents, adultes et seniors."
     />
 
-    <!-- Google Font: Miriam Libre -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,572 +18,511 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="header-content">
-          <h1>Sujet Singulier</h1>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
-          <nav class="nav">
-            <a href="#art-therapie">Qu'est-ce que l'art-thérapie ?</a>
-            <a href="#seances">Vos séances</a>
-            <a href="#approche">Mon approche</a>
-            <a href="#parcours">Mon parcours</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-
-          <nav class="nav-mobile" id="mobileNav">
-            <a href="#art-therapie">Qu'est-ce que l'art-thérapie ?</a>
-            <a href="#seances">Vos séances</a>
-            <a href="#approche">Mon approche</a>
-            <a href="#parcours">Mon parcours</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <p class="site-brand">
+          <a class="site-brand__link" href="#top">
+            <span class="site-brand__name">Sujet Singulier</span>
+          </a>
+        </p>
+        <nav class="primary-nav" aria-label="Navigation principale">
+          <button
+            type="button"
+            class="primary-nav__toggle"
+            aria-expanded="false"
+            aria-controls="primaryNavList"
+          >
+            Menu
+          </button>
+          <ul
+            id="primaryNavList"
+            class="primary-nav__list"
+            data-visible="false"
+            aria-hidden="true"
+          >
+            <li class="primary-nav__item">
+              <a href="#art-therapie">Qu'est-ce que l'art-thérapie ?</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="#seances">Vos séances</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="#approche">Mon approche</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="#parcours">Mon parcours</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="repeating-grid hero-grid">
-            <div class="hero-text flow">
-              <h2>Sujet Singulier</h2>
-              <p class="lead">
-                Un espace où le processus créateur devient soin
-              </p>
-              <p>
-                Pour vous, un proche ou votre institution : découvrez
-                l'accompagnement qui peut vous aider à cheminer vers
-                l'aller-mieux.
-              </p>
-              <a href="#contact" class="btn"
-                >Réservez une première séance d'essai</a
-              >
-            </div>
-            <div class="hero-image">
-              <img
-                src="logo.svg"
-                alt="Logo Sujet Singulière"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: contain;
-                  border-radius: var(--radius-large);
-                "
-              />
-            </div>
+    <main id="contenu">
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="container hero__layout">
+          <div class="hero__text flow">
+            <h1 id="hero-title">Sujet Singulier</h1>
+            <p class="lead">Un espace où le processus créateur devient soin</p>
+            <p>
+              Pour vous, un proche ou votre institution&nbsp;: découvrez
+              l'accompagnement qui peut vous aider à cheminer vers
+              l'aller-mieux.
+            </p>
+            <a class="btn" href="#contact">Réservez une première séance d'essai</a>
           </div>
+          <figure class="hero__visual">
+            <img
+              class="hero__logo"
+              src="logo.svg"
+              alt="Logo Sujet Singulier"
+            />
+          </figure>
         </div>
       </section>
 
-      <section id="accueil" class="services">
-        <div class="container">
-          <div class="services-content">
-            <div class="center flow">
-              <h2>Qu'est-ce que l'art-thérapie ?</h2>
-              <p class="lead">
-                Le travail que je vous propose Le travail que je vous propose
-                part de "ce qui vous pose problème". Ensemble, nous dessinerons
-                les contours de ce qui entrave votre aller-mieux et nous
-                définirons les objectifs de votre accompagnement.
-              </p>
-            </div>
+      <section
+        id="art-therapie"
+        class="section section--canvas"
+        aria-labelledby="art-therapie-title"
+      >
+        <div class="container stack">
+          <header class="section__header center flow">
+            <h2 id="art-therapie-title">Qu'est-ce que l'art-thérapie&nbsp;?</h2>
+            <p class="lead">
+              Le travail que je vous propose part de ce qui vous pose problème.
+              Ensemble, nous dessinons les contours de ce qui entrave votre
+              aller-mieux et définissons les objectifs de votre accompagnement.
+            </p>
+          </header>
 
-            <div class="fluid-grid services-grid">
-              <div class="service-card flow">
-                <div class="service-icon">🎨</div>
-                <h3>Une expression au-delà des mots</h3>
-                <p>
-                  L'art-thérapie utilise les matières plastiques, le bricolage
-                  artistique et les mouvements du corps pour exprimer autrement
-                  que par les mots ce qui, au fond de vous, fait blocage,
-                  résistance ou souffrance.
-                </p>
-              </div>
-
-              <div class="service-card flow">
-                <div class="service-icon">✨</div>
-                <h3>Aucune compétence artistique n'est requise</h3>
-                <p>
-                  L'objectif n'est pas de créer de "belles productions" mais de
-                  comprendre votre histoire autrement et de cheminer plus
-                  paisiblement. Les productions sont au service du travail sur
-                  soi, non l'inverse.
-                </p>
-              </div>
-
-              <div class="service-card flow">
-                <div class="service-icon">🌟</div>
-                <h3>Pour qui ?</h3>
-                <p>
-                  <strong>Pour les enfants :</strong> dès 3 ou 4 ans, dès que le
-                  consentement explicite est possible<br />
-                  <strong>Pour les seniors :</strong> même quand la mémoire peut
-                  jouer des tours, si la personne trouve du sens et du
-                  plaisir<br />
-                  <strong>Pour tout âge de la vie</strong>
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="center flow"
-              style="
-                margin-top: var(--space-xl);
-                padding: var(--space-l);
-                background-color: var(--color-accent);
-                color: white;
-                border-radius: var(--radius-medium);
-              "
-            >
-              <h3>Important</h3>
+          <div class="fluid-grid services-grid" role="list">
+            <article class="service-card flow" role="listitem">
+              <div class="service-icon" aria-hidden="true">🎨</div>
+              <h3>Une expression au-delà des mots</h3>
               <p>
-                Si vous avez un suivi psychiatrique ou psychologique, je vous
-                demanderai de confirmer avec votre thérapeute que votre
-                participation aux ateliers est adéquate (certificat médical
-                requis).
+                L'art-thérapie mobilise les matières plastiques, le bricolage
+                artistique et les mouvements du corps pour exprimer autrement ce
+                qui, au fond de vous, fait blocage, résistance ou souffrance.
               </p>
-            </div>
+            </article>
+
+            <article class="service-card flow" role="listitem">
+              <div class="service-icon" aria-hidden="true">✨</div>
+              <h3>Aucune compétence artistique requise</h3>
+              <p>
+                L'objectif n'est pas de créer de belles productions mais de
+                comprendre votre histoire autrement et de cheminer plus
+                paisiblement. Les productions servent le travail sur soi, non
+                l'inverse.
+              </p>
+            </article>
+
+            <article class="service-card flow" role="listitem">
+              <div class="service-icon" aria-hidden="true">🌟</div>
+              <h3>Pour qui&nbsp;?</h3>
+              <p>
+                <strong>Pour les enfants&nbsp;:</strong> dès 3 ou 4 ans, lorsque
+                le consentement explicite est possible.<br />
+                <strong>Pour les seniors&nbsp;:</strong> même quand la mémoire
+                joue des tours, si la personne trouve du sens et du plaisir.<br />
+                <strong>Pour tout âge de la vie.</strong>
+              </p>
+            </article>
           </div>
+
+          <aside class="note-panel flow" role="note">
+            <h3>Important</h3>
+            <p>
+              Si vous avez un suivi psychiatrique ou psychologique, je vous
+              demanderai de confirmer avec votre thérapeute que votre
+              participation aux ateliers est adéquate (certificat médical
+              requis).
+            </p>
+          </aside>
         </div>
       </section>
 
-      <section id="seances" class="about">
-        <div class="container">
-          <div class="center flow">
-            <h2>Vos séances</h2>
-          </div>
+      <section id="seances" class="section section--shell" aria-labelledby="seances-title">
+        <div class="container stack">
+          <header class="section__header center flow">
+            <h2 id="seances-title">Vos séances</h2>
+          </header>
 
-          <div style="margin-top: var(--space-xl)">
-            <h3>Quelle fréquence ?</h3>
+          <div class="stack">
+            <h3>Quelle fréquence&nbsp;?</h3>
             <p>
               Chaque semaine ou toutes les deux semaines est le rythme idéal. Ce
-              rythme vous donne le temps de digérer et d'intégrer les éléments
-              d'une séance à l'autre. La durée d'un suivi peut aller de quelques
-              semaines (minimum 6 ou 8 séances) à plusieurs mois (soit une
-              vingtaine de séances).
+              temps permet de digérer et d'intégrer les éléments d'une séance à
+              l'autre. La durée d'un suivi peut aller de quelques semaines
+              (minimum 6 à 8 séances) à plusieurs mois (environ vingt séances).
             </p>
           </div>
 
-          <div
-            class="fluid-grid services-grid"
-            style="margin-top: var(--space-l)"
-          >
-            <div class="service-card flow">
+          <div class="fluid-grid services-grid" role="list">
+            <article class="service-card flow" role="listitem">
               <h3>Séance individuelle</h3>
               <p>
-                <strong>Durée :</strong> 1h00<br />
-                <strong>Tarif :</strong> CHF 90 (tarif ajusté si plusieurs
-                séances réservées)<br />
-                <strong>Première séance d'essai :</strong> CHF 70<br />
-                <strong>Lieu :</strong> Nyon ou à votre domicile<br />
-                <strong>Sur demande :</strong> coordination avec votre
+                <strong>Durée&nbsp;:</strong> 1h00<br />
+                <strong>Tarif&nbsp;:</strong> CHF 90 (ajusté si plusieurs
+                séances sont réservées)<br />
+                <strong>Première séance d'essai&nbsp;:</strong> CHF 70<br />
+                <strong>Lieu&nbsp;:</strong> Nyon ou à votre domicile<br />
+                <strong>Sur demande&nbsp;:</strong> coordination avec votre
                 thérapeute
               </p>
-            </div>
+            </article>
 
-            <div class="service-card flow">
+            <article class="service-card flow" role="listitem">
               <h3>Séance familiale</h3>
               <p>
-                <strong>Durée :</strong> 1h30<br />
-                <strong>Tarif :</strong> CHF 120 (tarif ajusté si plusieurs
-                séances réservées)<br />
-                <strong>Première séance d'essai :</strong> CHF 100<br />
-                <strong>Lieu :</strong> Nyon ou à votre domicile<br />
-                <em>(parent/enfant ; fratrie)</em>
+                <strong>Durée&nbsp;:</strong> 1h30<br />
+                <strong>Tarif&nbsp;:</strong> CHF 120 (ajusté si plusieurs
+                séances sont réservées)<br />
+                <strong>Première séance d'essai&nbsp;:</strong> CHF 100<br />
+                <strong>Lieu&nbsp;:</strong> Nyon ou à votre domicile<br />
+                <em>Parent/enfant ; fratrie</em>
               </p>
-            </div>
+            </article>
 
-            <div class="service-card flow">
+            <article class="service-card flow" role="listitem">
               <h3>Séance de groupe</h3>
               <p>
-                <strong>Durée :</strong> 2h00<br />
-                <strong>Tarif :</strong> CHF 175 (tarif ajusté si plusieurs
-                séances réservées)<br />
-                <strong>Pour :</strong> résidents EMS, associations de patients,
-                proches aidants, etc.<br />
-                <strong>Lieu :</strong> dans votre institution/association
-                (cantons de Vaud et Genève)<br />
-                <em>(maximum 5 personnes)</em>
+                <strong>Durée&nbsp;:</strong> 2h00<br />
+                <strong>Tarif&nbsp;:</strong> CHF 175 (ajusté si plusieurs
+                séances sont réservées)<br />
+                <strong>Public&nbsp;:</strong> résidents EMS, associations de
+                patients, proches aidants, etc.<br />
+                <strong>Lieu&nbsp;:</strong> dans votre institution ou
+                association (cantons de Vaud et Genève)<br />
+                <em>Maximum 5 personnes</em>
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="approche" class="approach">
-        <div class="container">
-          <div class="approach-content">
-            <div class="center flow">
-              <h2>Mon approche</h2>
-              <p class="lead">
-                "Il suffit d'un seul geste"<br />
-                - Roustang
+      <section id="approche" class="section section--orchid" aria-labelledby="approche-title">
+        <div class="container stack">
+          <header class="section__header center flow">
+            <h2 id="approche-title">Mon approche</h2>
+            <blockquote class="decorative-quote lead">
+              <span class="quote-text">Il suffit d'un seul geste</span>
+              <cite>Roustang</cite>
+            </blockquote>
+            <p>
+              Il suffit d'un premier geste pour créer une autre histoire ou une
+              nouvelle suite à l'histoire qui vous tourmente. Ce geste peut
+              initier un travail d'exploration pour transformer une souffrance
+              en cicatrice.
+            </p>
+          </header>
+
+          <div class="fluid-grid approach-grid" role="list">
+            <article class="approach-card flow" role="listitem">
+              <h3>Une approche personnalisée</h3>
+              <p>
+                Je ne base pas mon travail sur un diagnostic spécifique.
+                Ensemble, nous élaborons un parcours singulier et j'adapte les
+                matières aux situations que vous traversez.
               </p>
               <p>
-                Il suffit d'un premier geste pour créer une autre histoire ou
-                une nouvelle suite à l'histoire qui vous tourmente. Ce premier
-                geste peut marquer l'initiation d'un travail d'exploration pour
-                transformer une souffrance en une cicatrice.
+                Je vous accueille tel que vous êtes, sans jugement, grâce à une
+                écoute active et des questionnements ciblés.
               </p>
-            </div>
+            </article>
 
-            <div class="repeating-grid approach-grid">
-              <div class="approach-card flow">
-                <h3>Une approche personnalisée</h3>
-                <p>
-                  Je ne base pas mon travail autour de diagnostic spécifique.
-                  Vous êtes un sujet singulier, nous élaborons ensemble un
-                  parcours singulier. J'adapte les matières aux problèmes que
-                  vous rencontrez.
-                </p>
-                <p>
-                  Je vous accueille tel que vous êtes. Je vous ouvre un espace
-                  sans jugement. Je vous accompagne grâce à un travail d'écoute
-                  et de questionnements.
-                </p>
-              </div>
-
-              <div class="approach-card flow">
-                <h3>L'aspect éphémère des productions</h3>
-                <p>
-                  Les productions créées pendant les séances sont défaites après
-                  chaque rencontre. Ce qui se passe en séance reste en séance -
-                  seules les traces mentales se poursuivent en dehors de
-                  l'espace et du temps de la séance.
-                </p>
-                <p>
-                  Cette dimension éphémère fait partie intégrante du processus
-                  thérapeutique.
-                </p>
-              </div>
-            </div>
+            <article class="approach-card flow" role="listitem">
+              <h3>L'aspect éphémère des productions</h3>
+              <p>
+                Les productions créées pendant les séances sont défaites après
+                chaque rencontre. Seules les traces mentales se poursuivent en
+                dehors de l'espace de la séance.
+              </p>
+              <p>
+                Cette dimension éphémère fait partie intégrante du processus
+                thérapeutique.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
       <section
-        class="services"
-        style="background: var(--color-neutral-dark); color: white"
+        class="section section--inverse section--midnight"
+        aria-labelledby="institutions-title"
       >
-        <div class="container">
-          <div class="services-content">
-            <div class="center flow">
-              <h2 style="color: white">Collaborations institutionnelles</h2>
-            </div>
+        <div class="container stack">
+          <header class="section__header center flow">
+            <h2 id="institutions-title">Collaborations institutionnelles</h2>
+          </header>
 
-            <div class="fluid-grid services-grid">
-              <div
-                class="service-card flow"
-                style="
-                  background: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(10px);
-                "
-              >
-                <h3 style="color: white">Mon expérience en institutions</h3>
-                <p style="color: white">
-                  <strong>Ateliers individuels et de groupe :</strong> Clinique
-                  psychiatrique, France (2022-2023)<br />
-                  <strong>Ateliers individuels et de groupe :</strong> Hôpital
-                  de jour, France (2022-2023)
-                </p>
-              </div>
+          <div class="fluid-grid services-grid" role="list">
+            <article class="service-card service-card--overlay flow" role="listitem">
+              <h3>Mon expérience en institutions</h3>
+              <p>
+                <strong>Ateliers individuels et de groupe&nbsp;:</strong> Clinique
+                psychiatrique, France (2022-2023)<br />
+                <strong>Ateliers individuels et de groupe&nbsp;:</strong> Hôpital
+                de jour, France (2022-2023)
+              </p>
+            </article>
 
-              <div
-                class="service-card flow"
-                style="
-                  background: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(10px);
-                "
-              >
-                <h3 style="color: white">Projets développés</h3>
-                <p style="color: white">
-                  <strong>Podcast "Journal des héros ordinaires" :</strong>
-                  Création collaborative avec les patients, valorisant leur
-                  parole et leur vécu (disponible sur Spotify)<br />
-                  <strong>Séances en piscine :</strong> Adaptation de
-                  l'art-thérapie au milieu aquatique<br />
-                  <strong>Thérapie canine :</strong> Intégration de la médiation
-                  animale
-                </p>
-              </div>
+            <article class="service-card service-card--overlay flow" role="listitem">
+              <h3>Projets développés</h3>
+              <p>
+                <strong>Podcast «&nbsp;Journal des héros ordinaires&nbsp;»&nbsp;:</strong>
+                création collaborative valorisant la parole des patients (Spotify).<br />
+                <strong>Séances en piscine&nbsp;:</strong> adaptation de
+                l'art-thérapie au milieu aquatique.<br />
+                <strong>Médiation canine&nbsp;:</strong> intégration de la
+                thérapie animale.
+              </p>
+            </article>
 
-              <div
-                class="service-card flow"
-                style="
-                  background: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(10px);
-                "
-              >
-                <h3 style="color: white">Pour votre établissement</h3>
-                <p style="color: white">
-                  Ces exemples illustrent ma capacité à adapter l'art-thérapie
-                  aux spécificités de chaque institution et à développer des
-                  projets innovants avec vos équipes.
-                </p>
-              </div>
-            </div>
+            <article class="service-card service-card--overlay flow" role="listitem">
+              <h3>Pour votre établissement</h3>
+              <p>
+                Ces exemples illustrent ma capacité à adapter l'art-thérapie aux
+                spécificités de chaque institution et à co-construire des
+                projets innovants avec vos équipes.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="parcours" class="about">
+      <section id="parcours" class="section" aria-labelledby="parcours-title">
         <div class="container">
-          <div class="repeating-grid about-grid">
+          <div class="hero__layout about-grid">
             <div class="about-text flow">
-              <h2>Mon parcours</h2>
+              <h2 id="parcours-title">Mon parcours</h2>
               <p class="lead">
-                De la danse à l'art-thérapie en passant par l'anthropologie de
-                la santé
+                De la danse à l'art-thérapie en passant par l'anthropologie de la
+                santé.
               </p>
               <p>
                 L'histoire raconte que j'ai fait mes premiers pas dans une salle
-                de danse. Dès lors, ce lieu est devenu mon lieu d'expression, la
-                danse, ma manière de communiquer, de ressentir et de partager.
+                de danse. Dès lors, ce lieu est devenu mon espace d'expression,
+                la danse ma manière de communiquer, de ressentir et de partager.
               </p>
 
-              <div>
+              <div class="stack">
                 <h3>Formation et expériences</h3>
                 <p>
-                  <strong>Formation académique :</strong> MBA Business
+                  <strong>Formation académique&nbsp;:</strong> MBA Business
                   Administration (France), MCI Coopération internationale
                   (Suisse), PhD Anthropologie de la santé (Suisse), Art-thérapie
-                  RNCP (France)
+                  RNCP (France).
                 </p>
                 <p>
-                  <strong>Recherche actuelle :</strong> Chercheuse en sciences
-                  sociales, domaine de la santé mentale (CHUV et HES-SO)
+                  <strong>Recherche actuelle&nbsp;:</strong> Chercheuse en
+                  sciences sociales, santé mentale (CHUV et HES-SO).
                 </p>
                 <p>
-                  <strong>Voyages formateurs :</strong> Europe de l'Est, Asie,
-                  Amérique du Nord et du Sud
+                  <strong>Voyages formateurs&nbsp;:</strong> Europe de l'Est,
+                  Asie, Amérique du Nord et du Sud.
                 </p>
               </div>
 
-              <div>
+              <div class="stack">
                 <h3>Expériences en art-thérapie</h3>
-                <ul
-                  style="
-                    padding-left: var(--space-m);
-                    color: var(--color-neutral-dark);
-                  "
-                >
+                <ul class="disc-list">
                   <li>
-                    Atelier de médiation artistique : FIGHT Philadelphia, USA
-                    (2018-2019)
+                    Atelier de médiation artistique&nbsp;: FIGHT Philadelphia,
+                    USA (2018-2019).
                   </li>
                   <li>
-                    Atelier de groupe, violences subies par les femmes, Paris
-                    (2020)
+                    Atelier de groupe contre les violences faites aux femmes,
+                    Paris (2020).
                   </li>
                   <li>
-                    Ateliers individuels et de groupe : Clinique psychiatrique,
-                    France (2022-2023)
+                    Ateliers individuels et de groupe&nbsp;: Clinique
+                    psychiatrique, France (2022-2023).
                   </li>
                   <li>
-                    Ateliers individuels et de groupe : Hôpital de jour, France
-                    (2022-2023)
+                    Ateliers individuels et de groupe&nbsp;: Hôpital de jour,
+                    France (2022-2023).
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="about-image">
+            <figure class="about-image">
               <img
-                src="logo.svg"
-                alt="Logo Sujet Singulier"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: contain;
-                  border-radius: var(--radius-large);
-                "
+                class="about-image__media"
+                src="julie.JPG"
+                alt="Portrait de Julie Pluies"
               />
-            </div>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="contact-content">
-            <div class="center flow">
-              <h2>Contact et réservation</h2>
-              <p class="lead">Réservez une première séance d'essai</p>
+      <section id="contact" class="section section--sky" aria-labelledby="contact-title">
+        <div class="container stack">
+          <header class="section__header center flow">
+            <h2 id="contact-title">Contact et réservation</h2>
+            <p class="lead">Réservez une première séance d'essai.</p>
+          </header>
+
+          <div class="hero__layout contact-grid">
+            <div class="contact-info flow">
+              <h3>Premier contact</h3>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <div class="stack">
+                  <strong>Premier contact par téléphone</strong>
+                  <p>
+                    Cliquez sur «&nbsp;je souhaite être appelé&nbsp;». Un échange
+                    de 15 minutes pour évaluer vos besoins et vérifier si
+                    l'art-thérapie vous convient.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">✉️</div>
+                <div class="stack">
+                  <strong>Premier contact par email</strong>
+                  <p>
+                    Remplissez le questionnaire pour me transmettre vos besoins
+                    avant notre échange.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📱</div>
+                <div class="stack">
+                  <strong>Téléphone</strong>
+                  <a class="contact-link" href="tel:+41783078735">078&nbsp;307&nbsp;87&nbsp;35</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📨</div>
+                <div class="stack">
+                  <strong>Email</strong>
+                  <a class="contact-link" href="mailto:julie.pluies@ik.me"
+                    >julie.pluies@ik.me</a
+                  >
+                </div>
+              </div>
             </div>
 
-            <div class="repeating-grid contact-grid">
-              <div class="contact-info flow">
-                <h3>Premier contact</h3>
-
-                <div class="contact-item">
-                  <div class="contact-icon">📞</div>
-                  <div>
-                    <strong>Premier contact par téléphone</strong><br />
-                    Cliquez sur "je souhaite être appelé"<br />
-                    Un premier contact de 15 minutes pour évaluer vos besoins et
-                    savoir si l'art-thérapie peut vous convenir.
-                  </div>
+            <div class="contact-form">
+              <h3>Je souhaite être appelé</h3>
+              <form action="#" method="post" novalidate>
+                <div class="form-group">
+                  <label for="nom">Nom complet *</label>
+                  <input type="text" id="nom" name="nom" required />
                 </div>
 
-                <div class="contact-item">
-                  <div class="contact-icon">✉️</div>
-                  <div>
-                    <strong>Premier contact par email</strong><br />
-                    Je remplis le questionnaire<br />
-                    Cela me permet de prendre connaissance de vos besoins avant
-                    de vous contacter.
-                  </div>
+                <div class="form-group">
+                  <label for="telephone">Téléphone *</label>
+                  <input type="tel" id="telephone" name="telephone" required />
                 </div>
 
-                <div class="contact-item">
-                  <div class="contact-icon">📱</div>
-                  <div>
-                    <strong>Téléphone</strong><br />
-                    <a
-                      href="tel:+41783078735"
-                      style="color: white; text-decoration: none"
-                      >078 307 87 35</a
-                    >
-                  </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
                 </div>
 
-                <div class="contact-item">
-                  <div class="contact-icon">✉️</div>
-                  <div>
-                    <strong>Email</strong><br />
-                    <a
-                      href="mailto:julie.pluies@ik.me"
-                      style="color: white; text-decoration: none"
-                      >julie.pluies@ik.me</a
-                    >
-                  </div>
+                <div class="form-group">
+                  <label for="type">Type de séance souhaité</label>
+                  <select id="type" name="type">
+                    <option value="individuelle">Séance individuelle</option>
+                    <option value="familiale">Séance familiale</option>
+                    <option value="groupe">
+                      Séance de groupe en institution
+                    </option>
+                    <option value="information">Demande d'information</option>
+                  </select>
                 </div>
-              </div>
 
-              <div class="contact-form">
-                <h3>Je souhaite être appelé</h3>
-                <form action="#" method="post">
-                  <div class="form-group">
-                    <label for="nom">Nom complet *</label>
-                    <input type="text" id="nom" name="nom" required />
-                  </div>
+                <div class="form-group">
+                  <label for="message">Message (optionnel)</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Vos disponibilités ou toute autre information utile..."
+                  ></textarea>
+                </div>
 
-                  <div class="form-group">
-                    <label for="telephone">Téléphone *</label>
-                    <input
-                      type="tel"
-                      id="telephone"
-                      name="telephone"
-                      required
-                    />
-                  </div>
+                <button type="submit" class="btn">Demander à être rappelé</button>
 
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" />
-                  </div>
-
-                  <div class="form-group">
-                    <label for="type">Type de séance souhaité</label>
-                    <select
-                      id="type"
-                      name="type"
-                      style="
-                        width: 100%;
-                        padding: var(--space-s);
-                        border: 1px solid rgba(53, 80, 112, 0.2);
-                        border-radius: var(--radius-small);
-                        font-family: var(--font-family-base);
-                        font-size: var(--step--1);
-                        color: var(--color-text);
-                        background-color: white;
-                      "
-                    >
-                      <option value="individuelle">Séance individuelle</option>
-                      <option value="familiale">Séance familiale</option>
-                      <option value="groupe">
-                        Séance de groupe en institution
-                      </option>
-                      <option value="information">Demande d'information</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="message">Message (optionnel)</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Vos disponibilités ou toute autre information utile..."
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" class="btn">
-                    Demander à être rappelé
-                  </button>
-
-                  <p
-                    class="small"
-                    style="
-                      margin-top: var(--space-s);
-                      opacity: 0.8;
-                      color: var(--color-text);
-                    "
-                  >
-                    * Champs obligatoires. Vos données sont traitées de manière
-                    confidentielle.
-                  </p>
-                </form>
-              </div>
+                <p class="form-hint">
+                  * Champs obligatoires. Vos données sont traitées de manière
+                  confidentielle.
+                </p>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" aria-labelledby="footer-title">
       <div class="container">
         <div class="footer-content flow">
-          <p>&copy; 2025 Sujet Singulier - Julie Pluies, Art-thérapeute</p>
-          <p>Cabinet d'art-thérapie à Nyon, Suisse | 078 307 87 35</p>
-          <p>
-            <a
-              href="mailto:julie.pluies@ik.me"
-              style="color: white; opacity: 0.8"
+          <p id="footer-title">&copy; 2025 Sujet Singulier — Julie Pluies, Art-thérapeute</p>
+          <address class="footer-address">
+            Cabinet d'art-thérapie à Nyon, Suisse ·
+            <a class="footer-link" href="tel:+41783078735">078&nbsp;307&nbsp;87&nbsp;35</a>
+            ·
+            <a class="footer-link" href="mailto:julie.pluies@ik.me"
               >julie.pluies@ik.me</a
             >
-          </p>
+          </address>
         </div>
       </div>
     </footer>
 
     <script>
-      // Mobile menu functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-        const mobileNav = document.getElementById("mobileNav");
+      document.addEventListener('DOMContentLoaded', () => {
+        const navToggle = document.querySelector('.primary-nav__toggle');
+        const navList = document.getElementById('primaryNavList');
 
-        mobileMenuBtn.addEventListener("click", function () {
-          mobileNav.classList.toggle("active");
+        if (!navToggle || !navList) {
+          return;
+        }
+
+        const setNavState = (isOpen) => {
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+          navList.dataset.visible = String(isOpen);
+          navList.setAttribute('aria-hidden', String(!isOpen));
+        };
+
+        navToggle.addEventListener('click', () => {
+          const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+          setNavState(!isExpanded);
         });
 
-        // Close mobile menu when clicking on a link
-        const mobileNavLinks = mobileNav.querySelectorAll("a");
-        mobileNavLinks.forEach((link) => {
-          link.addEventListener("click", function () {
-            mobileNav.classList.remove("active");
-          });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener("click", function (event) {
-          if (
-            !mobileMenuBtn.contains(event.target) &&
-            !mobileNav.contains(event.target)
-          ) {
-            mobileNav.classList.remove("active");
+        const mediaQuery = window.matchMedia('(min-width: 62rem)');
+        const applyMediaState = () => {
+          if (mediaQuery.matches) {
+            navToggle.hidden = true;
+            setNavState(true);
+          } else {
+            navToggle.hidden = false;
+            setNavState(false);
           }
+        };
+
+        mediaQuery.addEventListener('change', applyMediaState);
+        applyMediaState();
+
+        navList.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            if (!mediaQuery.matches) {
+              setNavState(false);
+            }
+          });
         });
       });
     </script>
