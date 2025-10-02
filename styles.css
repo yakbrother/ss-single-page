@@ -385,6 +385,10 @@
     background-size: cover, 512px;
   }
 
+  .hero__layout {
+    align-items: center;
+  }
+
   .hero__text {
     --flow-space: var(--space-s);
   }
@@ -400,12 +404,9 @@
   }
 
   .hero__logo {
-    width: clamp(12rem, 40vw, 18rem);
-    aspect-ratio: 1;
-    border-radius: var(--radius-l);
-    box-shadow: var(--shadow-soft);
-    background: var(--color-surface-elevated);
-    padding: var(--space-s);
+    width: min(100%, clamp(16rem, 50vw, 34rem));
+    height: auto;
+    display: block;
   }
 
   .section__header {
