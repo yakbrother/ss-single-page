@@ -232,7 +232,6 @@
   }
 
   .hero__layout,
-  .contact-grid,
   .about-grid {
     display: grid;
     gap: var(--space-l);
@@ -666,73 +665,9 @@
     font-weight: 600;
   }
 
-  .contact-form {
-    background: var(--color-surface-elevated);
-    border-radius: var(--radius-l);
-    padding: var(--space-l);
-    border: 1px solid hsl(213 36% 90%);
-    box-shadow: var(--shadow-soft);
-  }
-
   .section--sky .contact-item {
     background: hsl(0 0% 100% / 0.9);
     border-color: hsl(205 36% 80%);
-  }
-
-  .section--sky .contact-form {
-    background: hsl(0 0% 100% / 0.92);
-    border-color: hsl(205 36% 78%);
-  }
-
-  .form-group {
-    display: grid;
-    gap: var(--space-3xs);
-  }
-
-  .form-group + .form-group {
-    margin-top: var(--space-s);
-  }
-
-  .form-group label {
-    font-weight: 600;
-  }
-
-  input,
-  select,
-  textarea {
-    width: 100%;
-    padding: var(--space-2xs) var(--space-s);
-    border-radius: var(--radius-s);
-    border: 1px solid hsl(213 36% 82%);
-    background: var(--color-surface);
-    transition: border-color var(--transition-default),
-      box-shadow var(--transition-default);
-  }
-
-  input:focus-visible,
-  select:focus-visible,
-  textarea:focus-visible {
-    border-color: var(--color-accent);
-    box-shadow: var(--shadow-focus);
-  }
-
-  textarea {
-    min-height: clamp(8rem, 6rem + 10vw, 14rem);
-    resize: vertical;
-  }
-
-  select {
-    appearance: none;
-    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
-      linear-gradient(135deg, currentColor 50%, transparent 50%);
-    background-position: calc(100% - 1.25rem) 50%, calc(100% - 0.75rem) 50%;
-    background-size: 0.5rem 0.5rem;
-    background-repeat: no-repeat;
-  }
-
-  .form-hint {
-    margin-top: var(--space-s);
-    color: var(--color-text-subtle);
   }
 
   .btn {
