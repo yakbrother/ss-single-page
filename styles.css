@@ -542,31 +542,35 @@
   }
 
   .decorative-quote {
+    --quote-color: var(--color-secondary);
+    --quote-size: clamp(1.2rem, 1rem + 0.8vw, 1.8rem);
     display: grid;
     justify-items: center;
-    gap: var(--space-2xs);
+    gap: var(--space-xs);
     margin-inline: auto;
     text-align: center;
-    color: var(--color-secondary);
+    color: var(--quote-color);
   }
 
   .decorative-quote .quote-text {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(0.75rem, 0.5rem + 0.5vw, 1.25rem);
+    gap: clamp(0.5rem, 0.35rem + 0.4vw, 1rem);
+    font-family: var(--font-family-base);
     font-style: italic;
-    font-weight: 600;
-    font-size: var(--step-1);
-    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: var(--quote-size);
+    line-height: 1.4;
+    color: var(--quote-color);
   }
 
   .decorative-quote .quote-text::before,
   .decorative-quote .quote-text::after {
     font-family: var(--font-family-heading);
-    font-size: clamp(3.5rem, 2.5rem + 4vw, 6rem);
-    line-height: 0.8;
-    color: hsl(347 35% 60%);
+    font-size: clamp(3rem, 2rem + 4vw, 5rem);
+    line-height: 0.6;
+    color: var(--quote-color);
   }
 
   .decorative-quote .quote-text::before {
@@ -579,34 +583,21 @@
 
   .decorative-quote cite {
     font-style: normal;
-    font-size: var(--step-0);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-text-subtle);
+    font-size: clamp(1rem, 0.95rem + 0.2vw, 1.2rem);
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: color-mix(in srgb, var(--quote-color) 70%, white 30%);
     display: inline-flex;
     align-items: center;
     gap: var(--space-3xs);
   }
 
   .decorative-quote cite::before {
-    content: '\2014';
+    content: '\2013';
   }
 
   .section--orchid .decorative-quote {
-    color: hsl(0 0% 96%);
-  }
-
-  .section--orchid .decorative-quote .quote-text {
-    color: hsl(0 0% 100%);
-  }
-
-  .section--orchid .decorative-quote .quote-text::before,
-  .section--orchid .decorative-quote .quote-text::after {
-    color: hsl(347 60% 70%);
-  }
-
-  .section--orchid .decorative-quote cite {
-    color: hsl(0 0% 88%);
+    --quote-color: hsl(0 0% 98%);
   }
 
   .approach-card {
@@ -665,9 +656,22 @@
     font-weight: 600;
   }
 
+  .contact-cta {
+    background: var(--color-surface-elevated);
+    border-radius: var(--radius-l);
+    padding: var(--space-l);
+    border: 1px solid hsl(213 36% 90%);
+    box-shadow: var(--shadow-soft);
+  }
+
   .section--sky .contact-item {
     background: hsl(0 0% 100% / 0.9);
     border-color: hsl(205 36% 80%);
+  }
+
+  .section--sky .contact-cta {
+    background: hsl(0 0% 100% / 0.92);
+    border-color: hsl(205 36% 78%);
   }
 
   .btn {
@@ -693,6 +697,11 @@
 
   .btn:active {
     transform: translateY(0);
+  }
+
+  .btn--large {
+    font-size: var(--step-1);
+    padding: var(--space-s) var(--space-xl);
   }
 
   .site-footer {
