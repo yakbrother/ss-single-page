@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Miriam Libre";
+  src: url("fonts/MiriamLibre-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miriam Libre";
+  src: url("fonts/MiriamLibre-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
 @layer reset, theme, layout, components, utilities;
 
 @layer reset {
